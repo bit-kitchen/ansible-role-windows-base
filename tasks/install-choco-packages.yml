@@ -2,3 +2,5 @@
 - name: Install Everything
   win_shell: choco install everything -y
   when: install_everything
+  args:
+    creates: C:\Program Files\Everything\Everything.exe
