@@ -2,6 +2,24 @@
 # Whether to upgrade existing chocolatey packages
 chocolatey_latest: yes
 
-chocolatey_packages:
+chocolatey_packages_basic:
+- 7zip
 - chocolatey
 - everything
+- firefox
+- googlechrome
+- linkshellextension
+- microsoft-edge
+- notepadplusplus
+- qttabbar
+
+chocolatey_packages_dev:
+- beyondcompare
+- bitvise-ssh-client
+- cygwin
+- git
+- git-lfs
+- microsoft-windows-terminal
+- vscode
+
+chocolatey_packages_custom: []

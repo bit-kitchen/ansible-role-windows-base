@@ -3,4 +3,16 @@
 - hosts: windows
   gather_facts: no
   roles:
-    - ../..
+    - name: ../..
+
+      # Whether to upgrade existing chocolatey packages
+      # chocolatey_packages_latest: yes
+
+      # Override list of basic packages
+      # chocolatey_packages_basic: []
+
+      # Override list of dev packages
+      # chocolatey_packages_dev: []
+
+      # Specify list of custom packages
+      # chocolatey_packages_custom: []
