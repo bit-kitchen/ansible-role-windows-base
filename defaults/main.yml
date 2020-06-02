@@ -1,4 +1,7 @@
 ---
+# Whether to upgrade existing chocolatey packages
+chocolatey_latest: yes
+
 chocolatey_packages:
 - chocolatey
 - everything
