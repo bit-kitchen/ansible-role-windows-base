@@ -1,3 +1,7 @@
 ---
 - name: Install choco packages
   include_tasks: install-choco-packages.yml
+  when: >
+    ansible_os_family is not defined
+    or ansible_os_family == 'Windows'
+    or ansible_os_family.startswith('CYGWIN')
