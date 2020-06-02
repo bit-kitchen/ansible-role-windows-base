@@ -1,6 +1,9 @@
 ---
-- name: Install Everything
-  win_shell: choco install everything -y
-  when: install_everything
-  args:
-    creates: C:\Program Files\Everything\Everything.exe
+- name: Install Chocolatey Packages
+  win_chocolatey:
+    name: "{{ item }}"
+    state: latest
+  loop: "{{ [
+    'chocolatey',
+    'everything' if install_everything else [],
+  ] | flatten(levels=1) }}"
