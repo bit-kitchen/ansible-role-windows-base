@@ -1,2 +1,4 @@
 ---
-install_everything: yes
+chocolatey_packages:
+- chocolatey
+- everything

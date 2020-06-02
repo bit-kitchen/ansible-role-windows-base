@@ -3,7 +3,4 @@
   win_chocolatey:
     name: "{{ item }}"
     state: latest
-  loop: "{{ [
-    'chocolatey',
-    'everything' if install_everything else [],
-  ] | flatten(levels=1) }}"
+  loop: "{{ chocolatey_packages }}"
