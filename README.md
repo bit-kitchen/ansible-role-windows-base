@@ -1,6 +1,9 @@
 ansible-role-windows-base
 =========================
 
+[![Ansible Role: bit_kitchen.windows_base](https://img.shields.io/ansible/role/49029.svg)](https://galaxy.ansible.com/bit_kitchen/windows_base)
+[![Build Status](https://travis-ci.org/bit-kitchen/ansible-role-windows-base.svg?branch=master)](https://travis-ci.org/bit-kitchen/ansible-role-windows-base)
+
 Install base packages for Windows.
 
 This role will do nothing on Linux, so that it can be depended on by roles compatible with both Linux and Windows.
