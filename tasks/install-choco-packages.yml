@@ -5,6 +5,5 @@
     state: "{{ 'latest' if chocolatey_latest else 'present' }}"
   loop: "{{ [
     chocolatey_packages_basic,
-    chocolatey_packages_dev,
     chocolatey_packages_custom,
   ] | flatten(levels=1) }}"

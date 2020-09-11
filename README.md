@@ -23,23 +23,20 @@ chocolatey_latest: yes
 
 chocolatey_packages_basic:
 - 7zip
+- beyondcompare
 - chocolatey
 - everything
 - firefox
 - googlechrome
+- gsudo
 - linkshellextension
 - microsoft-edge
-- notepadplusplus
-- qttabbar
-
-chocolatey_packages_dev:
-- beyondcompare
-- bitvise-ssh-client
-- cygwin
-- git
-- git-lfs
 - microsoft-windows-terminal
-- vscode
+- mouse-jiggler
+- notepadplusplus
+- powershell-core
+- qttabbar
+- sysinternals
 
 chocolatey_packages_custom: []
 ```

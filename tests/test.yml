@@ -11,8 +11,5 @@
       # Override list of basic packages
       # chocolatey_packages_basic: []
 
-      # Override list of dev packages
-      # chocolatey_packages_dev: []
-
       # Specify list of custom packages
       # chocolatey_packages_custom: []
