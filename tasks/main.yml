@@ -1,6 +1,9 @@
 ---
-- name: Install choco packages
-  include_tasks: install-choco-packages.yml
+- name: Install Chocolatey Packages
+  win_chocolatey:
+    name: "{{ item }}"
+    state: "{{ 'latest' if chocolatey_latest else 'present' }}"
+  loop: "{{ chocolatey_packages }}"
   when: >
     ansible_os_family is not defined
     or ansible_os_family == 'Windows'

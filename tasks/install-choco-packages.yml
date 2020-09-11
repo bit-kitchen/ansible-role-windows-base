@@ -1,6 +1,0 @@
----
-- name: Install Chocolatey Packages
-  win_chocolatey:
-    name: "{{ item }}"
-    state: "{{ 'latest' if chocolatey_latest else 'present' }}"
-  loop: "{{ chocolatey_packages }}"
