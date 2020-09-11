@@ -30,7 +30,6 @@ chocolatey_packages:
 - googlechrome
 - gsudo
 - linkshellextension
-- microsoft-edge
 - microsoft-windows-terminal
 - mouse-jiggler
 - notepadplusplus
