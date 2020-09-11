@@ -2,7 +2,7 @@
 # Whether to upgrade existing chocolatey packages
 chocolatey_latest: yes
 
-chocolatey_packages_basic:
+chocolatey_packages:
 - 7zip
 - beyondcompare
 - chocolatey
@@ -18,5 +18,3 @@ chocolatey_packages_basic:
 - powershell-core
 - qttabbar
 - sysinternals
-
-chocolatey_packages_custom: []

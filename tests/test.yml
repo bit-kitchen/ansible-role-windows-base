@@ -8,8 +8,5 @@
       # Whether to upgrade existing chocolatey packages
       # chocolatey_packages_latest: yes
 
-      # Override list of basic packages
-      # chocolatey_packages_basic: []
-
-      # Specify list of custom packages
-      # chocolatey_packages_custom: []
+      # Override list of packages
+      # chocolatey_packages: []

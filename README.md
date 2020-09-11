@@ -21,7 +21,7 @@ Role Variables
 ```yml
 chocolatey_latest: yes
 
-chocolatey_packages_basic:
+chocolatey_packages:
 - 7zip
 - beyondcompare
 - chocolatey
@@ -37,8 +37,6 @@ chocolatey_packages_basic:
 - powershell-core
 - qttabbar
 - sysinternals
-
-chocolatey_packages_custom: []
 ```
 
 
@@ -51,14 +49,26 @@ Example Playbook
 ----------------
 
 ```yml
-- hosts: windows
+- name: Install base packages for Windows
+  hosts: windows
   roles:
   - name: bit_kitchen.windows_base
-    # Specify "yes" to upgrade existing packages to latest;
-    # Specify "no" to install new packages only.
+    # Specify "yes" to upgrade base packages to latest;
+    # Specify "no" to install them if not already.
     chocolatey_latest: no
-    # List of additional packages to install
-    chocolatey_packages_custom:
+```
+
+
+```yml
+- name: Install/Upgrade custom packages for Windows
+  hosts: windows
+  roles:
+  - name: bit_kitchen.windows_base
+    # Specify "yes" to upgrade specified packages to latest;
+    # Specify "no" to install them if not already.
+    chocolatey_latest: yes
+    # List of packages to install
+    chocolatey_packages:
     - vlc
 ```
 
